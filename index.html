@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        ul>li {
+            display: inline-block;
+            padding-left: 2%;
+        }
+
+        .row-container {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+        }
+
+        .row-container button:hover {
+            color: rgb(79, 7, 212);
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+        }
+
+        .demo {
+            display: flex;
+            gap: 10px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .demo button {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            height: 30px;
+            text-shadow: 2px 2px blue;
+        }
+
+        .demo button:hover {
+            color: rgb(228, 14, 50);
+        }
+
+        .card1 {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .card1 img {
+            border-radius: 10px;
+        }
+        .row-container button:hover{
+            background-color: transparent;
+        }
+
+        .col-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            row-gap: 100px;
+        }
+        #subscription{
+        color:brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menubar">
+        <ul>
+            <li><a><i class="fa-brands fa-youtube"></i><span style="color:red">YOUTUBE</span></a></li>
+            <li><a><input type="text" placeholder="search"
+                        style="width:800px;height:40px;border-radius: 20px;text-align: center;font-size: 18px;"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a><i class="fa-solid fa-microphone"></i></a></li>
+            <li><a><i class="fa-solid fa-video"></i> </a></li>
+            <li><a><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="col-md-3">
+            <div class="row-container">
+                <button><i class="fa-solid fa-house"></i> home</button>
+                <button><i class="fa-solid fa-bolt"></i> shorts</button>
+                <button id="btn 1" onclick="alert('your subscriptions')"><i class="fa-solid fa-square-caret-right"></i><a href="#subscription">subscription</a></button>
+               <section id="subscription">
+                niha sisters
+                prashu
+               </section>
+                <button> <i class="fa-solid fa-circle-user"></i> your channel</button>
+                <button><i class="fa-solid fa-clock"></i> watch later</button>
+                <button><i class="fa-solid fa-square-caret-right"></i> your videos</button>
+                <button><i class="fa-solid fa-clock-rotate-left"></i> history </button>
+                EXPLORE
+                <button><i class="fa-solid fa-bag-shopping"></i> shopping</button>
+                <button> <i class="fa-solid fa-music"></i> music</button>
+                <button> <i class="fa-solid fa-clapperboard"></i> movies</button>
+                <button> <i class="fa-regular fa-lightbulb"></i> learning</button>
+                <button><i class="fa-solid fa-podcast"></i> podcast</button>
+                <button><i class="fa-solid fa-trophy"></i> sports</button>
+                <button><i class="fa-solid fa-gear"></i> setting</button>
+                <button><i class="fa-regular fa-flag"></i> report history</button>
+                <button><i class="fa-solid fa-circle-question"></i> help</button>
+                <button> <i class="fa-solid fa-comments"></i> feedback</button>
+            </div>
+        </div>
+        <div class="col-md-9">
+
+            <div class="demo" style="margin-left: 30px;">
+                <button>ALL</button>
+                <button>MUSIC</button>
+                <button>LIVE</button>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JAVASCRIPT</button>
+                <button>REACT</button>
+                <button>EXPRESSJS</button>
+                <button>NODEJS</button>
+                <button>MANGODB</button>
+                <button>shorts</button>
+                <button>cartoons</button>
+                <button>animated</button>
+            </div>
+            <div class="col-container">
+                <div class="card1">
+                    <img src="fsd.jpg" />
+                    <h4>full stack web development course/html,css,bootstrap,js etc......</h4>
+                    <h6>complete html course duration:2:18:37</h6>
+                </div>
+                <div class="card1">
+                    <img src="careerx.png" />
+                    <h4>careerx club,a cohort based edutech startup helping students to learn technologies and placing
+                        them in top companies</h4>
+                    <h6>careerx club introduction|duration:1:38:33</h6>
+                </div>
+                <div class="card1">
+                    <img src="salar.jpg" />
+                    <h4>salar release trailer-telugu/prabhas|homvale films</h4>
+                    <h6>complete trailer|duration:2:18</h6>
+                </div>
+                <div class="card1">
+                    <img src="react.jpg" />
+                    <h4>react js tutorial for begginers</h4>
+                    <h6>react js tutorial introduction|duration:1:10:10</h6>
+                </div>
+                <div class="card1">
+                    <img src="cartoons.jpg" />
+                    <h4>micky mouse fun house holiday full episode|season 2 episode-26</h4>
+                    <h6>duration:2:18:37</h6>
+                </div>
+                <div class="card1">
+                    <img src="img1.jpg" />
+                    <h4>telugu stories-magical river|moral stories|kookoo tv</h4>
+                    <h6>duration:2:18:37</h6>
+                </div>
+                <div class="card1">
+                    <img src="img2.jpg" />
+                    <h4>winter vibes|neha sisters</h4>
+                    <h6>duration:2:18:37</h6>
+                </div>
+                <div class="card1">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.KHWN_zbF3riXIJLYBWt_JgHaEK&pid=Api&P=0&h=180" />
+                    <h4>covid-19 jn.1 news live updates|NTV</h4>
+                    <h6>duration:18:37</h6>
+                </div>
+                <div class="card1">
+                    <img src="img3.jpg" />
+                    <h4>snow-white full story|princes story fairy tales|little fox</h4>
+                    <h6>duration:2:18:37</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let e1=document.getElementById("subscription")
+        e1.style.display="none"
+    </script>
+</body>
+
+</html>
